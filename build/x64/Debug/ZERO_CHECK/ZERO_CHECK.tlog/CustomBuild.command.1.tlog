@@ -1,0 +1,10 @@
+^C:\VS CODE\STACK\BUILD\CMAKEFILES\CEF7B1BCB281392B1212E89BB618E04A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/vs code/Stack" "-BC:/vs code/Stack/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/vs code/Stack/build/Stack.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
